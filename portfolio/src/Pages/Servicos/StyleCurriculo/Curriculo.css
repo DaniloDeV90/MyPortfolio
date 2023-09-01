@@ -1,0 +1,26 @@
+.Container_Curriculo_Black {
+    background-color: var(--background-color);
+}
+
+.Container_Curriculo {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    
+ 
+    height: calc(100vh  - 50px);
+    color: white;
+}
+
+.Section_Curriculo > p {
+    font-size: 20px;
+}
+.Section_Curriculo {
+    
+    margin-top: 10px;
+}
+
+.Container_Curriculo_Light {
+    background: rgb(226, 250, 213);
+}

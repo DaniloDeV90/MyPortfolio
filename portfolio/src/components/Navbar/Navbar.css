@@ -1,0 +1,87 @@
+nav {
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgb(27, 121, 74);
+    color: rgb(2, 14, 15);
+
+    display: flex;
+    gap: 10px;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nome_Nav > p {
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.link_Desktop {
+    margin-right: 10px;
+}
+
+span {
+    font-size: 20px;
+
+}
+
+.links_Mobile,
+.menuhamburgao {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .link_Desktop {
+        display: none;
+    }
+
+    .menuhamburgao {
+        display: flex;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .links_Mobile {
+        display: flex;
+
+       
+        flex-direction: column;
+        top: 50px;
+        right: 20px;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(128, 242, 102);
+        gap: 10px;
+        padding: 10px;
+
+    }
+
+    .links_Mobile > .RowMobile {
+        border: 1px solid black;
+       border-bottom: 100px;
+    
+    }
+
+}
+
+/* .links {
+    display: flex;
+    color: blue;
+    flex-direction: column;
+    background-color: bisque;
+    margin-top: 160px;
+    right: 20px;
+
+    position: absolute;
+   
+} */

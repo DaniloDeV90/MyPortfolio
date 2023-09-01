@@ -1,0 +1,129 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+
+
+
+
+@keyframes piscar {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+.Container_Home_Black {
+    background-color: var(--background-color);
+}
+
+
+.Container_Home {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
+ 
+    height: calc(100vh );
+}
+
+
+.SobreMim_Home {
+    font-family: 'Red Hat Mono', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.0rem;
+    color: var(--cor-texto);
+
+
+}
+
+.SobreMim_Home::after {
+    content: "|";
+    opacity: 1;
+
+    animation: piscar .5s  infinite;
+    
+}
+
+.ColorSpecoal_Home {
+
+    font-size: 70px;
+    color: var(--cor-texto-especial);
+}
+
+.Imagens_Home {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.imgIA_Home {
+
+    width: 50vh;
+    height: 260px;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px var(--cor-texto-especial);
+    border: 2px solid var(--cor-texto-especial);
+
+    transition: 0.5s;
+}
+
+.imgIA_Home:hover {
+
+    box-shadow: 0px 0px 50px var(--cor-texto-especial);
+}
+
+.Container_Home_Light {
+    background: rgb(226, 250, 213);
+ 
+}
+
+.Container_Home_Light > .Section_Home > .HeaderContent_Home > span {
+    color: rgb(0, 0, 0);
+   
+}
+
+
+@media (max-width: 990px) {
+
+
+
+    .Imagens_Home {
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .imgIA_Home {
+        width: 200px;
+
+    }
+    .SobreMim_Home {
+    
+     text-align: center;
+    
+    }
+
+}
+
+@media (min-height: 1000px) {
+    .Container_Home {
+
+        height: 100vh;
+    }
+
+    .Imagens_Home {
+
+        justify-content: center;
+        align-items: center;
+
+    }
+}

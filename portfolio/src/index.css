@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+
+:root {
+
+    --cor-texto: rgb(248, 247, 247);
+    --background-color: rgb(2, 14, 15);
+    --tamanho-fonte: 16px;
+    --cor-texto-especial: rgb(32, 223, 127);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Mono', monospace;
+
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    background: none;
+    transition: 1s;
+}
+
+a:hover {
+    color: rgb(56, 223, 14);
+}

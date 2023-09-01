@@ -1,0 +1,202 @@
+.Container_Sobre_Black {
+    background-color: rgb(6, 20, 13);
+    color: white;
+}
+
+.Container_Sobre {
+    height: calc(100vh - 50px);
+
+}
+
+.Row {
+    border:  white;
+    border-bottom: 1px solid ;
+    margin-left: 20px;
+
+}
+
+
+.Section_Sobre {
+    padding-top: 20px;
+}
+
+.Section_Sobre>h1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.Eu_Sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+.MeuNome_Sobre,
+.MeuTelefone_Sobre,
+.MeuEmail_Sobre,
+.MinhaCidade_Sobre,
+.Curriculo {
+
+    margin-left: 20px;
+}
+
+.Nome_Sobre,
+.Telefone_Sobre,
+.ContentTelefone_Sobre,
+.ContentName_Sobre,
+.Email_Sobre,
+.ContentEmail_Sobre,
+.Cidade_Sobre,
+.ContentCidade_Sobre {
+    display: inline;
+
+
+}
+
+.QuemSouEu_Sobre {
+
+  border: white;
+    border-right: 1px solid ;
+
+    max-width: 500px;
+    word-break: keep-all;
+}
+
+.QuemSouEu_Sobre>h3 {
+    padding-top: 10px;
+}
+
+
+.Localizacao_Sobre>p {
+
+    margin-left: 15px;
+
+}
+
+.CurriculoContainer_Sobre {
+    display: flex;
+    justify-content: center;
+}
+
+.Curriculo_Sobre {
+    margin-top: 20px;
+    background-color: rgb(23, 81, 40);
+    margin-left: 20px;
+    border-radius: 10px;
+    
+}
+
+.DownloadCurriculo_Sobre {
+
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+     
+    word-wrap: break-word;
+
+}
+
+.H2_Sobre {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+.Container_Sobre_Light{
+    background-color: rgb(192, 222, 207);
+    color: rgb(0, 0, 0);
+}
+.Container_Sobre_Light > .Section_Sobre > .Eu_Sobre > .Localizacao_Sobre > .CurriculoContainer_Sobre > .Curriculo_Sobre{
+    background-color: rgba(177, 255, 144, 0.764);
+}
+.QuemSouEu_Sobre {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .Eu_Sobre {
+
+        font-size: 15px;
+
+    }
+
+    .Nome_Sobre,
+    .Telefone_Sobre,
+    .ContentTelefone_Sobre,
+    .ContentName_Sobre,
+    .Email_Sobre,
+    .ContentEmail_Sobre,
+    .Cidade_Sobre,
+    .ContentCidade_Sobre {
+        display: block;
+        text-align: center;
+
+    }
+
+    .QuemSouEu_Sobre {
+        height: 400px;
+        margin: 20px;
+        font-size: 100%;
+    }
+
+    .Eu_Sobre {
+        align-items: normal;
+    }
+
+    .Localizacao_Sobre {
+        margin: 10px;
+    }
+}
+
+@media (max-height: 600px) {
+    .Container_Sobre {
+        height: 100%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .Row {
+        margin-left: 0px;
+        margin: 20px;
+    }
+
+    .Container_Sobre {
+        height: 100%;
+
+    }
+
+    .Eu_Sobre {
+        flex-direction: column;
+    }
+
+    .QuemSouEu_Sobre {
+
+        height: 100%;
+        border-right: 0px;
+        font-size: 20px;
+        border-bottom: 1px solid ;
+        text-align: center;
+        margin: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .Localizacao_Sobre  > div{
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+}
+
