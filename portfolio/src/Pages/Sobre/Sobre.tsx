@@ -1,6 +1,7 @@
 
 import "./StyleSobre/StyleSobre.css"
 import DownloadIcon from './StyleSobre/icons/downloadIcon'
+import Curriculo from "./curriculo/Currículo (5).pdf"
 const Sobre = (): JSX.Element => {
     return (
         <>
@@ -47,7 +48,7 @@ const Sobre = (): JSX.Element => {
                         <div className="CurriculoContainer_Sobre">
                             
                         <div className="Curriculo_Sobre">
-                        <a href="https://github.com/DaniloDeV90/Curriculo/blob/c3f3ec4759a4c667bf2df85c3b3a56daf5afb1da/Curr%C3%ADculo.pdf" type='application/pdf'  download ="CurriculoDanilo.pdf"className='DownloadCurriculo_Sobre'>
+                        <a href={Curriculo} type='application/pdf'  download ="CurriculoDanilo.pdf"className='DownloadCurriculo_Sobre'>
                           Baixe meu Curriculo <DownloadIcon/></a>
                     </div>
                     </div>
