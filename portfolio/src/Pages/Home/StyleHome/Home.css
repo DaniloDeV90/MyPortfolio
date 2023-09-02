@@ -113,3 +113,8 @@
 
     }
 }
+@media (max-width: 348px) {
+    .SobreMim_Home {
+        font-size: 15px;
+    }
+}

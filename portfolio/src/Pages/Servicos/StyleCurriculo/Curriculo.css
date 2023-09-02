@@ -219,6 +219,9 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .Tecnologias_Servicos {
+        margin-bottom: 10px;
+    }
 }
 @media (max-width: 470px) {
 
@@ -236,3 +239,15 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 280px) {
+    .TitleForm > h2 {
+        font-size: 15px;
+    }
+    .titleFormacao  > h3 {
+        text-align: left;
+    } 
+      .DecFormacao > p {
+        font-size: 14px;
+      }
+} 
