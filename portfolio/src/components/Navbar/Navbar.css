@@ -76,14 +76,10 @@ span {
 
 }
 
-/* .links {
-    display: flex;
-    color: blue;
-    flex-direction: column;
-    background-color: bisque;
-    margin-top: 160px;
-    right: 20px;
-
-    position: absolute;
-   
-} */
+@media (max-width: 312px) {
+    .nome_Nav > p {
+        font-size: 15px;
+     
+    
+    }
+}
