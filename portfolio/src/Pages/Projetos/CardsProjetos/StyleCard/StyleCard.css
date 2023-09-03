@@ -1,0 +1,8 @@
+.Close_Card {
+    display: flex;
+    justify-content: center;
+}
+.x {
+    cursor: pointer;
+ 
+}

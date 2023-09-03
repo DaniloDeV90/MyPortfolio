@@ -9,7 +9,7 @@ const LinkMobileComponnet = () => {
             <div className="RowMobile"></div>
             <span  ><a href="#curriculo">Curriculo</a> </span>
             <div className="RowMobile"></div>
-            <span> <a href="#home">Projetos</a></span>
+            <span> <a href="#projetos">Projetos</a></span>
             <div className="RowMobile"></div>
             <span> <a href="">Contato</a></span>
 

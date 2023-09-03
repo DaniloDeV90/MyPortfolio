@@ -7,28 +7,33 @@
 import { useEffect, useState } from "react"
 import { ThemeProvider } from "./Context/ThemeContext"
 import Index from "./Pages/Index"
+import { ClosedProvider } from "./Context/ClosedCardContext";
 function App() {
 
-  const  [date, setDate] = useState <boolean> (false);
+  const [date, setDate] = useState<boolean>(false);
 
 
-  useEffect (() =>  {
+  useEffect(() => {
 
-  
- if (!localStorage.getItem ("Theme")) localStorage.setItem ("Theme", "light")
-  setDate (true)
 
-  
-},[])
+    if (!localStorage.getItem("Theme")) localStorage.setItem("Theme", "light")
+    setDate(true)
+
+
+  }, [])
   return (
     <>
 
 
- {date &&  <ThemeProvider>
-      <Index />
- </ThemeProvider>}
+      {date && <ThemeProvider>
+        <ClosedProvider>
 
- {!date &&   <p>carregando...</p> }
+
+          <Index />
+        </ClosedProvider>
+      </ThemeProvider>}
+
+      {!date && <p>carregando...</p>}
     </>
   )
 }
