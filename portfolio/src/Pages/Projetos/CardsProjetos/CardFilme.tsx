@@ -1,4 +1,4 @@
-import React, { useState,useContext } from 'react'
+import  { useContext } from 'react'
 import "./StyleCard/StyleCard.css"
 
 import { ClosedContext } from '../../../Context/ClosedCardContext';
@@ -29,7 +29,7 @@ console.log (Closed?.closed)
         <h1>Eai</h1>
      </div>
      <div className="Card_Descricao">
-        <p>cristiano PENALDO</p>
+        <p>card da Api de filmes</p>
      </div>
         </div>
 

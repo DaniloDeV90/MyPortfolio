@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import  { useContext } from 'react'
 import { ClosedContext } from '../../../Context/ClosedCardContext';
 
 const LandingPageCard = () => {
@@ -24,7 +24,7 @@ console.log (Closed?.closed)
         <h1>Eai</h1>
      </div>
      <div className="Card_Descricao">
-        <p>cristiano Landing</p>
+        <p>Card da landingPage</p>
      </div>
         </div>
 

@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 import './StylesProjeto/Projeto.css'
 import FrontEndProjetos from './FrontEndProjetos/FrontEndProjetos'
 const Projetos = () => {
-    const [divButtons, setDivButtons] = useState<React.FormEvent<HTMLDivElement> | null>(null)
+   
     const ref = useRef<HTMLDivElement | null>(null)
 
     const [Category, setCategory] = useState<string>("all")
@@ -43,7 +43,7 @@ const Projetos = () => {
             <div className="Title_Projetos">
                 <h1>Projetos</h1>
 
-                <div className='buttonsProjetos' ref={ref} onChange={e => setDivButtons(e)}>
+                <div className='buttonsProjetos' ref={ref}>
                     <button id='all'>Todos</button>
                     <button id='Back_End'>Back-end</button>
                     <button id='Front_End'>Front-End</button>
