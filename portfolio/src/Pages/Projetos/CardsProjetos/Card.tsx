@@ -19,7 +19,7 @@ const Card = ({ elementos }: { elementos: JSXEelements }) => {
     const closeCard = () => {
 
         Closed?.toggleClosed(true)
-        console.log(Closed?.closed)
+   
 
     }
 

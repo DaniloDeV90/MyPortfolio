@@ -19,7 +19,7 @@ type ArrayComponent = {
 const FrontEndProjetos = ({ filtro }: { filtro: string }) => {
     const Closed = useContext(ClosedContext)
 
-    console.log(filtro)
+
     const ref = useRef<HTMLDivElement | null>(null)
     const [cardProjects, SetCardProjects] = useState<string | null>(null)
 
@@ -44,7 +44,7 @@ const FrontEndProjetos = ({ filtro }: { filtro: string }) => {
 
                         SetCardProjects(e.target.parentElement.id)
 
-                        console.log(parent)
+                       
                         CardComponents.forEach( (objeto ) => {
                             if (objeto.Id === parent) setComponent(objeto.Component)
                         })

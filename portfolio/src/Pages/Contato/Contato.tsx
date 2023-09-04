@@ -7,6 +7,8 @@ const Contato = () => {
 
     <div className="Contato">
 
+
+
     </div>
 </section>
   )

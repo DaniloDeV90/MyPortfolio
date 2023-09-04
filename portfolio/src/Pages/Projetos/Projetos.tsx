@@ -38,7 +38,7 @@ const Projetos = () => {
 
         button()
     }, [])
-    console.log(Category)
+  
 
     return (
         <section className='section_Projetos'>
