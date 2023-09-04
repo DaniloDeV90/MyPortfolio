@@ -27,9 +27,9 @@ const All_Back_End_Projects = () => {
 
                     </div>
                     <div className="TitleProjeto" id="ApiBlog">
-                        <h1>Api de alunos</h1>
+                        <h1>Mini Blog</h1>
                     </div>
-                    <p id="ApiBlog"  className="paragrafodesc">API Rest de cadastro de alunos</p>
+                    <p id="ApiBlog"  className="paragrafodesc">Um Blog em node com views integrada</p>
                 </div>
    </>
   )

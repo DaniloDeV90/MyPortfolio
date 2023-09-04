@@ -10,7 +10,8 @@ const LandingPageCard = () => {
       desc: "Desafio de css que eu fiz na rocketSeat que era criar uma landing Page, é o meu primeiro projeto front End.",
       tecnologias: [
          "react", "javascript", "css  in modules"
-      ]
+      ],
+      link: "https://rocket-nfts-seven.vercel.app"
    }
 
 

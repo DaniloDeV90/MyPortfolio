@@ -7,7 +7,8 @@ type JSXEelements = {
     Title: string,
     imagem: string,
     desc: string,
-    tecnologias: string[]
+    tecnologias: string[],
+    link: string
 }
 
 
@@ -53,7 +54,7 @@ const Card = ({ elementos }: { elementos: JSXEelements }) => {
 
 
                         <div className="LinkProjeto">
-                            <a href="">Acessar projeto</a>
+                            <a href={ elementos.link } target='_blank'>Acessar projeto</a>
                         </div>
 
 
