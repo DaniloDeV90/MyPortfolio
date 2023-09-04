@@ -37,6 +37,18 @@ span {
 
 }
 
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    background: none;
+    transition: 1s;
+}
+
+a:hover {
+    color: rgb(56, 223, 14);
+}
 .links_Mobile,
 .menuhamburgao {
     display: none;

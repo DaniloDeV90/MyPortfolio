@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./StylesContato/StylesContato.css"
 const Contato = () => {
   return (

@@ -4,14 +4,21 @@
    
 
 }
-
-
+.Container_Projetos {
+    height: 100vh;
+}
+.Title_Projetos {
+    padding-top: 10px;
+}
+.Title_Projetos  h1{
+    margin: 10px;
+}
 .Container_Projetos_Black>section>.Title_Projetos>.Projetos_Container>.containerProjetosFrontEnd>.Projetos_Container {
 
     color: rgb(255, 255, 255);
 }
 
-.Container_Projetos_Black>section>.Title_Projetos>.Projetos_Container>.containerProjetosFrontEnd>.Projetos_Container>.ConfigProjeto_Container {
+.Container_Projetos_Black>section>.Title_Projetos>.Projetos_Container>.containerProjetosFrontEnd >.Projetos_Container>.ConfigProjeto_Container {
     background-color: var(--background-color);
 
 }
@@ -44,6 +51,7 @@
 
 
 .buttonsProjetos > button {
+    font-size: 15px;
     padding: 2px;
     border-radius: 5px;
     cursor: pointer;
@@ -72,5 +80,9 @@
     .Container_Projetos {
         height: 100%;
     
+ 
     }
+
+ 
 }
+

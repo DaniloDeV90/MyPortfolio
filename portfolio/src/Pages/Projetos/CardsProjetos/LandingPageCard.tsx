@@ -1,5 +1,4 @@
-import { useContext } from 'react'
-import { ClosedContext } from '../../../Context/ClosedCardContext';
+
 import imgLandingPage from "../imgProjetos/LandingPage-a89ff69c.png"
 import Card from './Card';
 

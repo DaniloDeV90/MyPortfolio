@@ -1,4 +1,4 @@
-import  { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { ClosedContext } from '../../../Context/ClosedCardContext';
 
 import { ThemeContext } from '../../../Context/ThemeContext';
@@ -26,13 +26,13 @@ const Card = ({ elementos }: { elementos: JSXEelements }) => {
     useEffect(() => {
 
         setLightOrDarkTheme(Theme?.theme as string)
-    })
+    },[])
 
 
     return (
         <div className={`Card_Container  ${LightOrDarkTheme} `}>
 
-            <div className="Card">   
+            <div className="Card">
                 <div className="Close_Card" >
                     <h1>{elementos.Title}</h1>
                     <p onClick={closeCard} className='x'>X</p>
@@ -60,10 +60,10 @@ const Card = ({ elementos }: { elementos: JSXEelements }) => {
 
                         <div className="tecnologias_Usadas">
 
-                            { elementos.tecnologias.map (tec => (
-                                <span> {tec}</span>
-                            ))}                    
-       
+                            {elementos.tecnologias.map((tec, id) => (
+                                <span key={id}> {tec}</span>
+                            ))}
+
                         </div>
                     </div>
 

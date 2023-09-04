@@ -80,4 +80,35 @@ hr {
 
 
     
-   
+   .Card {
+    display: flex;
+    flex-direction: column;
+
+   }
+
+
+   @media (max-width: 718px) {
+    .Card_Descricao {
+        display: flex;
+        flex-direction: column;
+    }
+    #imgCard {
+        border-radius: 10px;
+        max-width: 300px;
+        max-height: 200px;
+        
+    }
+   }
+
+   @media (max-width: 341px) {
+    .Card_Descricao {
+        display: flex;
+        flex-direction: column;
+    }
+    #imgCard {
+        border-radius: 10px;
+        width: 250px;
+        height: 200px;
+        
+    }
+   }

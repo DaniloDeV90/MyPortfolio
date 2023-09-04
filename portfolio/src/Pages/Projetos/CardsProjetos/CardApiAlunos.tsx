@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Card from './Card'
 import imgAluno from "../allProjects/imgs/ImgAluno.jpeg"
 const CardApiAlunos = () => {

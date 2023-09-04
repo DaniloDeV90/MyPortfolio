@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Card from "./Card"
 import imgBlog from "./../allProjects/imgs/imgBlog.png"
 

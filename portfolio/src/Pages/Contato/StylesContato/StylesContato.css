@@ -1,4 +1,4 @@
 .Container_Contato {
     height: 100vh;
-    background-color: brown;
+    background-color: var(--background-color);
 }

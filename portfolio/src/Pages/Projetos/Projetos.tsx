@@ -41,7 +41,7 @@ const Projetos = () => {
     console.log(Category)
 
     return (
-        <section>
+        <section className='section_Projetos'>
             <div className="Title_Projetos">
                 <h1>Projetos</h1>
 

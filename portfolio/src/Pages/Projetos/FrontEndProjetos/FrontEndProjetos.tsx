@@ -45,7 +45,7 @@ const FrontEndProjetos = ({ filtro }: { filtro: string }) => {
                         SetCardProjects(e.target.parentElement.id)
 
                         console.log(parent)
-                        CardComponents.forEach(objeto => {
+                        CardComponents.forEach( (objeto ) => {
                             if (objeto.Id === parent) setComponent(objeto.Component)
                         })
 
@@ -72,6 +72,7 @@ const FrontEndProjetos = ({ filtro }: { filtro: string }) => {
     }, [Closed?.closed])
 
     return (
+     
         <div className="containerProjetosFrontEnd "  >
 
 
@@ -82,7 +83,7 @@ const FrontEndProjetos = ({ filtro }: { filtro: string }) => {
                 {filtro == "Back_End" ? <All_Back_End_Projects /> : ""}
 
             </div> : <Teste />}
-
+        
 
         </div>
     )

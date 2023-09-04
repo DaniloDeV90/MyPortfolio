@@ -1,7 +1,7 @@
 .Projetos_Container{
     margin-top: 10px;
     display: flex;
-    margin: 20px;
+   padding-bottom: 10px;
     align-items: center;
     flex-wrap: wrap;
 
@@ -10,7 +10,15 @@
 }
 
 
+.containerProjetosFrontEnd a {
+   transition: 0s;
 
+}
+
+.containerProjetosFrontEnd a:hover {
+    color: rgb(0, 255, 115) ;
+
+}
 .ConfigProjeto_Container {
     width: 300px;
     border-radius: 12px;
@@ -43,6 +51,15 @@
 
 }
 
-.Container_Projetos {
-    height: 100vh;
+@media (max-width: 300px) {
+    .ConfigProjeto_Container {
+        width: 300%;
+        border-radius: 12px;
+    
+        transition: 0.5s;
+        cursor: pointer;
+    
+    
+    }
+    
 }

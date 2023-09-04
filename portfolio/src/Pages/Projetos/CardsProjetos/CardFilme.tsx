@@ -1,7 +1,7 @@
-import { useContext } from 'react'
+
 import "./StyleCard/StyleCard.css"
 import imageApiFilme from "../imgProjetos/imgFilme-c8f5ec8d.jpg"
-import { ClosedContext } from '../../../Context/ClosedCardContext';
+
 import Card from './Card';
 
 const CardFilme = () => {
