@@ -20,11 +20,12 @@ hr {
 
 .Card_Container {
     border-radius: 10px;
+    height: 100%;
 }
 
 .x {
     cursor: pointer;
-    
+    margin-right: 20px;
 }
 .x:hover {
     color: red ;
@@ -42,7 +43,12 @@ hr {
    max-width: 500px;
 
 }
-
+.desc_do_projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .Close_Card {
     display: flex;
     justify-content: space-between;
@@ -85,7 +91,10 @@ hr {
     flex-direction: column;
 
    }
-
+.descricaoTec p {
+    font-size: 20px;
+ 
+}
 
    @media (max-width: 718px) {
     .Card_Descricao {
@@ -112,3 +121,5 @@ hr {
         
     }
    }
+
+ 

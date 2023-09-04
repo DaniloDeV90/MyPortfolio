@@ -2,7 +2,13 @@
 import "./StylesContato/StylesContato.css"
 const Contato = () => {
   return (
-    <div>Contato</div>
+<section>
+<h1>Contato </h1>
+
+    <div className="Contato">
+
+    </div>
+</section>
   )
 }
 

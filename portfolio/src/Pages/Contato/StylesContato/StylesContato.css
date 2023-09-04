@@ -1,4 +1,7 @@
 .Container_Contato {
-    height: 100vh;
+    height: calc( 100vh - 50px);
     background-color: var(--background-color);
+}
+.Container_Contato  h1{
+text-align: center;
 }
