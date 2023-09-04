@@ -1,7 +1,27 @@
-
 .Container_Projetos_Black {
     background-color: rgb(6, 20, 13);
+    color: white;
+   
+
+}
+
+
+.Container_Projetos_Black>section>.Title_Projetos>.Projetos_Container>.containerProjetosFrontEnd>.Projetos_Container {
+
     color: rgb(255, 255, 255);
+}
+
+.Container_Projetos_Black>section>.Title_Projetos>.Projetos_Container>.containerProjetosFrontEnd>.Projetos_Container>.ConfigProjeto_Container {
+    background-color: var(--background-color);
+
+}
+.Container_Projetos_Light>section>.Title_Projetos>.Projetos_Container>.containerProjetosFrontEnd>.Projetos_Container>.ConfigProjeto_Container {
+    background: rgb(226, 250, 213);
+
+}
+.Projetos_Container {
+    display: flex;
+    justify-content: center;
 }
 
 .Container_Projetos_Light {
@@ -9,13 +29,48 @@
     color: rgb(0, 0, 0);
 }
 
-.Container_Projetos {
-    height: calc(  100vh - 50px) ;
- 
-}
+
 .Title_Projetos {
     text-align: center;
 }
+
 .buttonsProjetos {
-    text-align: center;
+    display: flex;
+    gap: 4px;
+   justify-content: center;
+   
+
+}
+
+
+.buttonsProjetos > button {
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.Container_Projetos_Black > section >  .Title_Projetos > .buttonsProjetos > button {
+    background-color: rgb(192, 222, 207);
+
+}
+
+
+.Container_Projetos_Light > section >  .Title_Projetos > .buttonsProjetos > button {
+    background-color: rgb(23,81,40);
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 690px) {
+    .Container_Projetos {
+        height: 100%;
+    
+    }
 }

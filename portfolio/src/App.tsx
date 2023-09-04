@@ -25,7 +25,8 @@ function App() {
     <>
 
 
-      {date && <ThemeProvider>
+      {date && 
+      <ThemeProvider>
         <ClosedProvider>
 
 

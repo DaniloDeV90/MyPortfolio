@@ -1,41 +1,22 @@
-import  { useContext } from 'react'
+import { useContext } from 'react'
 import "./StyleCard/StyleCard.css"
-
+import imageApiFilme from "../imgProjetos/imgFilme-c8f5ec8d.jpg"
 import { ClosedContext } from '../../../Context/ClosedCardContext';
+import Card from './Card';
 
 const CardFilme = () => {
 
-    const Closed = useContext (ClosedContext);
-
-    const closeCard =  () => {
-
-        Closed?.toggleClosed (true)
-console.log (Closed?.closed)
-    
-    }
+   const CardFilme =  {
+      Title: "Api de Filmes",
+      imagem: imageApiFilme,
+      desc: "Projeto que eu criei consumindo uma api que retorna filmes aletórios, A finalidade desse projeto é gerar filmes para que você possa assistir quando estiver indeciso. Foram utilizados Axios para as requisições da api e React.",
+      tecnologias: ["react", "Axios", "javascript"]
+   }
 
 
 
 
-  return (
-    <div className='Card_Container'>
-
-        <div className="Card">
-     <div className="Close_Card" >
-      <p onClick={closeCard} className='x'>X</p>  
-     </div>
-
-     <div className="Title_Card">
-        <h1>Eai</h1>
-     </div>
-     <div className="Card_Descricao">
-        <p>card da Api de filmes</p>
-     </div>
-        </div>
-
-
-    </div>
-  )
+   return <Card elementos={CardFilme}/>
 }
 
 export default CardFilme

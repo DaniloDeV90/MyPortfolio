@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 interface ThemeContextType {
   theme: string;
@@ -29,3 +29,5 @@ const ThemeProvider =  ({ children }: {children: React.ReactNode}) => {
 };
 
 export { ThemeProvider,ThemeContext };
+
+

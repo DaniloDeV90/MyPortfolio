@@ -1,8 +1,10 @@
-import  { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './StylesProjeto/Projeto.css'
 import FrontEndProjetos from './FrontEndProjetos/FrontEndProjetos'
+
+
 const Projetos = () => {
-   
+
     const ref = useRef<HTMLDivElement | null>(null)
 
     const [Category, setCategory] = useState<string>("all")
@@ -50,10 +52,9 @@ const Projetos = () => {
                 </div>
 
                 <div className="Projetos_Container">
-                    {Category === "all" ? <p>oi</p> : ""}
-
-                    {Category === "Back_End" ? <p>oi Vascudo</p> : ""}
-                    {Category === "Front_End" ? <FrontEndProjetos/> : ""}  
+                    {Category === "all" ? <FrontEndProjetos filtro='all' /> : ""}
+                    {Category === "Back_End" ? <FrontEndProjetos filtro='Back_End' /> : ""}
+                    {Category === "Front_End" ? <FrontEndProjetos filtro='Front_End' /> : ""}
                 </div>
             </div>
         </section>

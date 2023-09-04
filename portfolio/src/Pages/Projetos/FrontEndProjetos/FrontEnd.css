@@ -11,18 +11,10 @@
 
 
 
-.imagem {
-
-    border-radius: 10px 10px 0 0;
-    height: 200px;
-    background-image: url("../imgProjetos/LandingPage-a89ff69c.png");
-    transition: 0.5s;
-}
-
 .ConfigProjeto_Container {
     width: 300px;
     border-radius: 12px;
-    background-color: var(--background-color);
+
     transition: 0.5s;
     cursor: pointer;
 
@@ -38,7 +30,9 @@
     text-align: center;
 
 }
-
+.paragrafodesc {
+    margin: 10PX;
+}
   .ConfigProjeto_Container:hover >  .container_imagens > .imagem  >  .sobreimg {
     opacity: 1;
 
@@ -48,7 +42,7 @@
     word-wrap: break-word;
 
 }
-#ApiFilme > .imagem {
-    background-image: url(../imgProjetos/imgFilme-c8f5ec8d.jpg);
-    background-position: bottom;
+
+.Container_Projetos {
+    height: 100vh;
 }

@@ -1,8 +1,83 @@
-.Close_Card {
-    display: flex;
-    justify-content: center;
+.light > .Card > .Card_Descricao >  .desc_do_projeto > .tecnologias_Usadas > span{
+    background-color: rgb(23,81,40);
 }
+
+hr {
+    border-color: black;
+}
+.dark > .Card > .Card_Descricao >  .desc_do_projeto > .tecnologias_Usadas > span{
+    background-color: rgb(180,247,159);
+}
+
+
+
+.light {
+    background-color: var(--background-color);
+}
+.dark {
+    background: rgb(226, 250, 213);
+}
+
+.Card_Container {
+    border-radius: 10px;
+}
+
 .x {
     cursor: pointer;
- 
+    
 }
+.x:hover {
+    color: red ;
+
+}
+
+.Card_Descricao {
+    display: flex;
+    margin: 20px;
+}
+.desc_do_projeto {
+    margin-left: 10px;
+}
+.descricaoTec {
+   max-width: 500px;
+
+}
+
+.Close_Card {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    align-items: center;
+}
+#imgCard {
+    border-radius: 10px;
+    max-width: 500px;
+    max-height: 200px;
+    
+}
+.LinkProjeto {
+    margin: 20px;
+}
+
+
+.LinkProjeto > a {
+    border-bottom: 2px solid  ;
+}
+
+.tecnologias_Usadas  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 600px;
+    margin-bottom: 10px;
+   
+}
+
+.tecnologias_Usadas > span {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+    
+   

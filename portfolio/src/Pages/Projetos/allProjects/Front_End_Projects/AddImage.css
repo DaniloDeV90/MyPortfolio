@@ -1,0 +1,16 @@
+.imagem {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    transition: 0.5s;
+}
+
+
+
+#landingPage>.imagem {
+    background-image: url("../../imgProjetos//LandingPage-a89ff69c.png");
+}
+
+#ApiFilme>.imagem {
+    background-image: url(../../imgProjetos/imgFilme-c8f5ec8d.jpg);
+    background-position: bottom;
+}

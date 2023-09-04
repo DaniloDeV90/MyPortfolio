@@ -5,21 +5,28 @@ import "./FrontEnd.css"
 import CardFilme from "../CardsProjetos/CardFilme"
 import { ClosedContext } from "../../../Context/ClosedCardContext"
 import LandingPageCard from "../CardsProjetos/LandingPageCard"
+import All_FrontEnd_Projects from "../allProjects/Front_End_Projects/All_Front_End"
+import All_Back_End_Projects from "../allProjects/Back_End_Projects/All_Back_End_Projects"
+import CardApiAlunos from "../CardsProjetos/CardApiAlunos"
+import ALLprojects from "../allProjects/MostrarTodos/ALLprojects"
 
+import CardApiBlog from "../CardsProjetos/CardApiBlog"
 type ArrayComponent = {
     Id: string,
     Component: JSX.Element
 }
 
-const FrontEndProjetos = () => {
+const FrontEndProjetos = ({ filtro }: { filtro: string }) => {
     const Closed = useContext(ClosedContext)
 
-
+    console.log(filtro)
     const ref = useRef<HTMLDivElement | null>(null)
     const [cardProjects, SetCardProjects] = useState<string | null>(null)
-    const CardComponents: ArrayComponent[] = [{ Id: "ApiFilme", Component: <CardFilme /> }, { Id: "landingPage", Component: <LandingPageCard /> }]
 
-    const [Component, setComponent] = useState<JSX.Element>(<p>testando..</p>)
+
+    const CardComponents: ArrayComponent[] = [{ Id: "ApiFilme", Component: <CardFilme /> }, { Id: "landingPage", Component: <LandingPageCard /> }, { Id: "ApiAluno", Component: <CardApiAlunos /> }, {Id: "ApiBlog", Component: <CardApiBlog/>}]
+
+    const [Component, setComponent] = useState<JSX.Element>(<p>carregando..</p>)
 
     const Teste = (): JSX.Element => {
         return Component
@@ -31,7 +38,7 @@ const FrontEndProjetos = () => {
         ref.current?.addEventListener(("click"), (e) => {
             if (ref.current) {
                 if (e.target instanceof Element) {
-               
+
                     if (e.target.parentElement) {
                         const parent = e.target.parentElement.id;
 
@@ -65,35 +72,15 @@ const FrontEndProjetos = () => {
     }, [Closed?.closed])
 
     return (
-        <div className="containerProjetosFrontEnd"  >
+        <div className="containerProjetosFrontEnd "  >
 
 
             {!cardProjects ? <div className="Projetos_Container" ref={ref}>
-                <div className="ConfigProjeto_Container" id="landingPage"   >
-                    <div className="container_imagens" id="landingPage" >
-                        <div className="imagem" id="landingPage" >
-                            <p className='sobreimg' id="landingPage" >Clique para ver detalhes</p>
-                        </div>
 
-                    </div>
-                    <div className="TitleProjeto" id="landingPage" >
-                        <h1>Landing Page</h1>
-                    </div>
-                    <p id="landingPage" >Página Landing Page q eu fiz como desafio da rocketSeat.</p>
-                </div>
-                <div className="ConfigProjeto_Container" id="ApiFilme"  >
-                    <div className="container_imagens" id="ApiFilme">
-                        <div className="imagem" id="ApiFilme">
-                            <p className='sobreimg' id="ApiFilme" >Clique para ver detalhes</p>
-                        </div>
+                {filtro === "all" ? <ALLprojects /> : ""}
+                {filtro == "Front_End" ? <All_FrontEnd_Projects /> : ""}
+                {filtro == "Back_End" ? <All_Back_End_Projects /> : ""}
 
-
-                    </div>
-                    <div className="TitleProjeto" id="ApiFilme">
-                        <h1>Landing Page</h1>
-                    </div>
-                    <p id="ApiFilme">Página Landing Page q eu fiz como desafio da rocketSeat.</p>
-                </div>
             </div> : <Teste />}
 
 

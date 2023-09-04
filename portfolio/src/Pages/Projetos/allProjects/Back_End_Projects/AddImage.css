@@ -1,0 +1,12 @@
+#ApiAluno  > .imagem {
+    background-image: url(../imgs/ImgAluno.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#ApiBlog > .imagem {
+    background-image: url(../imgs/imgBlog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

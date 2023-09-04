@@ -7,7 +7,9 @@
 .Container_Curriculo_Black {
     background-color: var(--background-color);
 }
-
+.Container_Curriculo_Light {
+    background: rgb(226, 250, 213);
+}
 .Container_Curriculo_Black>.Section_Curriculo>.curriculo_curriculo>.Formacao>.line-container {
 
     background-color: #ffffff;
@@ -104,9 +106,7 @@
     font-size: 20px;
 }
 
-.Container_Curriculo_Light {
-    background: rgb(226, 250, 213);
-}
+
 
 .curriculo_curriculo {
     display: flex;
