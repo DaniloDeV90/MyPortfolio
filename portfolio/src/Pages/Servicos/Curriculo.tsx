@@ -79,7 +79,7 @@ const Curriculo = () => {
                   <span>Javascript</span>
                   <span>React</span>
                   <span>Axios</span>
-                  <span>HML5</span>
+                  <span>HTML5</span>
                   <span>CSS3</span>
                   <span>Styled Components</span>
 
