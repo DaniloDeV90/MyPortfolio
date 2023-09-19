@@ -43,7 +43,7 @@ const FrontEndProjetos = ({ filtro }: { filtro: string }) => {
                         const parent = e.target.parentElement.id;
 
                         SetCardProjects(e.target.parentElement.id)
-                        console.log (e.currentTarget)
+            
 
                        
                         CardComponents.forEach( (objeto ) => {
