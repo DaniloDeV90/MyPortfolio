@@ -11,6 +11,12 @@ const LightDark = () => {
 
   const [isChecked, setIsChecked] = useState(cont);
 
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setIsChecked(event.target.checked);
+
+    Theme?.toggleTheme()
+
+  };
 
 
   return (
