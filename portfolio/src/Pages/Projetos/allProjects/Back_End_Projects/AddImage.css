@@ -10,3 +10,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#redeSocApi > .imagem {
+    background-image: url(../imgs/ImgRedeSoc.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

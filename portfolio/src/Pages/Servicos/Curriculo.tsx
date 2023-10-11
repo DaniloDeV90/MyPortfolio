@@ -20,7 +20,7 @@ const Curriculo = () => {
                 <p>De: 02/2022</p>
                 <p>até: 04/2024</p>
               </div>
-              
+
               <div className="instituicao">
                 <p>UNIDESC</p>
               </div>
@@ -61,15 +61,16 @@ const Curriculo = () => {
 
                   <span>Typescript</span>
                   <span>Node</span>
-                  <span>Java</span>
-                  <span>Spring Boot</span>
+                  <span>C#</span>
+                  <span>.NET</span>
+                  <span>Nest</span>
                   <span>Express</span>
 
                 </div>
               </div>
 
               <div className="FrontEndColumn">
-              <div className="TitleTecFront">
+                <div className="TitleTecFront">
                   <div className="TitleFront">
                     <h3>Front end</h3>
                   </div>
@@ -86,7 +87,7 @@ const Curriculo = () => {
                 </div>
               </div>
               <div className="DatabaseColumn">
-              <div className="TitleTecDatabase">
+                <div className="TitleTecDatabase">
                   <div className="TitleDatabase">
                     <h3>Databases</h3>
                   </div>
@@ -95,7 +96,8 @@ const Curriculo = () => {
 
                   <span>Mongodb</span>
                   <span>PostgreSQL</span>
-              
+                  <span>Redis</span>
+
 
                 </div>
               </div>

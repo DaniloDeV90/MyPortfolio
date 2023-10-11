@@ -31,6 +31,19 @@ const All_Back_End_Projects = () => {
                     </div>
                     <p id="ApiBlog"  className="paragrafodesc">Um Blog em node com views integrada</p>
                 </div>
+                <div className="ConfigProjeto_Container" id="redeSocApi"   >
+                    <div className="container_imagens" id="redeSocApi">
+                        <div className="imagem" id="redeSocApi">
+                            <p className='sobreimg' id="redeSocApi" >Clique para ver detalhes</p>
+                        </div>
+
+
+                    </div>
+                    <div className="TitleProjeto" id="redeSocApi">
+                        <h1>Api de Rede Social</h1>
+                    </div>
+                    <p id="redeSocApi"  className="paragrafodesc"> Uma api que fornece dados a uma rede social</p>
+                </div>
    </>
   )
 }
