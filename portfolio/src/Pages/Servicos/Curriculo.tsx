@@ -66,6 +66,8 @@ const Curriculo = () => {
                   <span>Nest</span>
                   <span>Express</span>
 
+                  <span>Java</span>
+                  <span> Spring Boot </span>
                 </div>
               </div>
 
@@ -83,7 +85,7 @@ const Curriculo = () => {
                   <span>HTML5</span>
                   <span>CSS3</span>
                   <span>Styled Components</span>
-
+                  <span>Tawilnd</span>
                 </div>
               </div>
               <div className="DatabaseColumn">

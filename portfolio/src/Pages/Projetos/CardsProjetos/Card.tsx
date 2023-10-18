@@ -31,9 +31,9 @@ const Card = ({ elementos }: { elementos: JSXEelements }) => {
 
 
     return (
-        <div className={`Card_Container  ${LightOrDarkTheme} `}>
+        <div className={`Card_Container  ${LightOrDarkTheme} `} id='card'>
 
-            <div className="Card">
+            <div className="Card" >
                 <div className="Close_Card" >
                     <h1>{elementos.Title}</h1>
                     <p onClick={closeCard} className='x'>X</p>
