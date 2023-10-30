@@ -12,6 +12,8 @@ import ALLprojects from "../allProjects/MostrarTodos/ALLprojects"
 
 import CardApiBlog from "../CardsProjetos/CardApiBlog"
 import CardRedeSoc from "../CardsProjetos/CardRedeSocApi"
+import CardSeaChallenge from "../CardsProjetos/CardSeaChallenge"
+import CardFrontSistemas from "../CardsProjetos/CardFrontSistemas"
 type ArrayComponent = {
     Id: string,
     Component: JSX.Element
@@ -25,7 +27,7 @@ const FrontEndProjetos = ({ filtro }: { filtro: string }) => {
     const [cardProjects, SetCardProjects] = useState<string | null>(null)
 
 
-    const CardComponents: ArrayComponent[] = [{ Id: "ApiFilme", Component: <CardFilme /> }, { Id: "landingPage", Component: <LandingPageCard /> }, { Id: "ApiAluno", Component: <CardApiAlunos /> }, {Id: "ApiBlog", Component: <CardApiBlog/>}, {Id: "redeSocApi", Component: <CardRedeSoc/>}]
+    const CardComponents: ArrayComponent[] = [{ Id: "ApiFilme", Component: <CardFilme /> }, { Id: "landingPage", Component: <LandingPageCard /> }, { Id: "ApiAluno", Component: <CardApiAlunos /> }, {Id: "ApiBlog", Component: <CardApiBlog/>}, {Id: "redeSocApi", Component: <CardRedeSoc/>}, {Id:"sistemasAPI", Component: <CardSeaChallenge/>}, {Id: "FrontSistemas", Component: <CardFrontSistemas/>} ]
 
     const [Component, setComponent] = useState<JSX.Element>(<p>carregando..</p>)
 

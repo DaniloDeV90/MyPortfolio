@@ -14,3 +14,8 @@
     background-image: url(../../imgProjetos/imgFilme-c8f5ec8d.jpg);
     background-position: bottom;
 }
+#FrontSistemas > .imagem {
+    background-image: url(../imgs/imgSistemas.jpeg);
+  
+    background-size: cover;
+}

@@ -29,6 +29,19 @@ const All_FrontEnd_Projects = () => {
                 </div>
                 <p id="ApiFilme" className="paragrafodesc">O site que gera filmes aleatorios para indecisos.</p>
             </div>
+            <div className="ConfigProjeto_Container" id="FrontSistemas"   >
+                <div className="container_imagens" id="FrontSistemas">
+                    <div className="imagem" id="FrontSistemas">
+                        <p className='sobreimg' id="FrontSistemas" >Clique para ver detalhes</p>
+                    </div>
+
+
+                </div>
+                <div className="TitleProjeto" id="FrontSistemas">
+                    <h1> Setores</h1>
+                </div>
+                <p id="FrontSistemas" className="paragrafodesc">Interface de criação de setores</p>
+            </div>
         </>
     )
 }

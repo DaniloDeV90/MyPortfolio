@@ -21,3 +21,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#sistemasAPI >  .imagem {
+    background-image: url(../imgs/imgSistemas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
