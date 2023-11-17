@@ -1,7 +1,7 @@
 
 import "./StyleSobre/StyleSobre.css"
 import DownloadIcon from './StyleSobre/icons/downloadIcon'
-import Curriculo from "./curriculo/Currículo (5).pdf"
+import Curriculo from "./curriculo/Curriculo.pdf"
 const Sobre = (): JSX.Element => {
     return (
         <>
@@ -28,7 +28,7 @@ const Sobre = (): JSX.Element => {
 
                         <div className="MeuTelefone_Sobre">
                             <div className='Telefone_Sobre'> Telefone: </div>
-                            <div className='ContentTelefone_Sobre'>+55(61)994263260</div>
+                            <div className='ContentTelefone_Sobre'>+55(61)9218-6149</div>
                         </div>
                         <div className='Row'></div>
                         <div className="MeuEmail_Sobre">
