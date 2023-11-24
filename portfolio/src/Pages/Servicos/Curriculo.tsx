@@ -62,7 +62,8 @@ const Curriculo = () => {
                   <span>Typescript</span>
                   <span>Node</span>
                   <span>C#</span>
-                  <span>.NET</span>
+                  <span>Python</span>
+                  <span>Django</span>
                   <span>Nest</span>
                   <span>Express</span>
 
